@@ -1,0 +1,21 @@
+<!DOCTYPE njk>
+<html>
+    <head>
+
+        {% block head %}
+        <title>B2 Mídia</title>
+        {% endblock %}
+
+        {% include "parts/styles.njk" %} <!-- Trazendo todos os STYLES -->
+    </head>
+    <body>
+        {% include "parts/messages.njk" %} <!-- Trazendo as mensagens -->
+        
+        {% include "parts/header.njk" %} <!--  Trazendo o Header -->
+
+        {% block content %}
+        {% endblock %}
+
+        {% include "parts/footer.njk" %} <!-- Trazendo o FOOTER -->
+    </body>
+</html> 
